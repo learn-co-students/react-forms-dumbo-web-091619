@@ -396,7 +396,7 @@ class ParentComponent extends React.Component {
     firstName: "",
     lastName: "",
   }
-  
+
   handleFirstNameChange = event => {
     this.setState({
       firstName: event.target.value
@@ -453,7 +453,7 @@ class Form extends React.Component {
 export default Form;
 ```
 
-Previously, our application was rendering `Form` directly inside `src/index.js`. Now, 
+Previously, our application was rendering `Form` directly inside `src/index.js`. Now,
 however, we've added a component that _renders_ `Form` as a child. Because of this
 change, you'll need to update `src/index.js` so that it renders `ParentComponent` instead of
 `Form`.
